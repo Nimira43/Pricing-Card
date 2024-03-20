@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Caveat&family=Dosis&family=Fontdiner+Swanky&family=IBM+Plex+Sans&family=Merienda&family=Nosifer&family=Rubik+Maze&family=Shantell+Sans&family=Signika+Negative&family=Six+Caps&family=Stick+No+Bills&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    
+    background: url('./woliul-hasan-Qg-rmOecwJQ-unsplash.jpg') no-repeat center center/cover;
+}
+
+.cards-wrapper {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0 , 0, 0, 0.6)), url('./pexels-pixabay-73873.jpg') no-repeat center;
+    background-size: cover;
+    color: beige;
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 25px;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    margin-bottom : 40px;
+}
+
+.card-header h3 {
+    color: yellow;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 30px;
+    margin: 30px;
+    border-bottom: 1px groove yellow;
+    padding: 10px;
+}
+
+.card-header h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+}
+
+.card-header sup {
+    font-size: 35px;
+}
+
+.card-header span {
+    font-size: 18px;
+}
+
+.card-body {
+    margin-bottom: 60px;
+}
+
+.card-body li {
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.card-body i {
+    margin-right: 25px;
+}
+
+.card-body .fa-check {
+    color:darkgreen;
+    background-color: beige;
+    padding: 4px;
+    border-radius: 50px;
+}
+
+.card-body .fa-times {
+    color: darkred;
+    background-color: beige;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.card-footer {
+    margin-bottom: 40px;
+}
+
+.card-footer button{
+    width: 120px;
+    padding: 10px;
+    background-color: yellow;
+    color: darkred;
+    font-family: 'Big Shoulders Display', san-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+
+.card-footer:active button {
+    transform: scale(0.95);
+}
+
+.card-footer:hover button {
+    background-color: rgb(147, 147, 6);
+    color: rgb(68, 3, 3);
+}
+
+@media(max-width: 1200px) {
+    .container {
+        height: 100%;
+    }
+    .cards-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 50px;
+    }
+}
